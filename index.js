@@ -3,7 +3,7 @@ function redirectToSearch() {
   
   const current_base_url = location.origin;
 
-  const redirectUrl = `https://oriparts.com/?search=${query}&back_url_pn=${current_base_url}/?pn={pn}`; 
+  const redirectUrl = `https://oriparts.com/?search=${query}&back_url_pn=${current_base_url}/site-integration/index.html?pn={pn}`; 
 
   //window.open(redirectUrl);
   window.location.href = redirectUrl;
