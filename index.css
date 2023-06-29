@@ -1,0 +1,48 @@
+/* * {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+} */
+
+.marketplace {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.search-bar {
+    text-align: center;
+}
+
+#searchInput{
+    text-align: center;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 30px;
+}
+
+.button {
+    width: 20%;
+    height: 30px;
+}
+
+.cart {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+}

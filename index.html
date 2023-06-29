@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>site-integration</title>
+</head>
+<body>
+    <div class="main">
+        <div class="marketplace">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Part Number"><br>
+                <button class="button" onclick="redirectToSearch()">Search Part</button>
+            </div>
+        </div>
+        <hr style="width: none; height: none;">
+        <div class="cart">
+            <div id="data-container"></div>
+        </div>
+        <script>
+            const url = new URL(window.location.href);
+            const searchParams = new URLSearchParams(url.search);
+            const pnValue = searchParams.get('pn');
+
+            const container = document.getElementById('data-container');
+            const pnElement = document.createElement('p');
+
+            pnElement.textContent = `Part Number: ${pnValue}`;
+
+            container.appendChild(pnElement);
+        </script>
+    </div>
+</body>
+</html>
